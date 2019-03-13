@@ -1,7 +1,10 @@
 require 'pry'
 def get_first_name_of_season_winner(data, season)
-  season
-  binding.pry
+  season.each do |info_type, info|
+    if info == "Winner"
+      season["name"]
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
