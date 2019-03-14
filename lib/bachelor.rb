@@ -60,5 +60,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  return ages.inject(:+)/ages.size
+  return (ages.inject(:+).to_f/ages.size).to_f
 end
